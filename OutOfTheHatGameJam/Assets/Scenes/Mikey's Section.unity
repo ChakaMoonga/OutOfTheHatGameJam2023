@@ -227,6 +227,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1460883429}
   - component: {fileID: 1460883428}
+  - component: {fileID: 1460883430}
   m_Layer: 0
   m_Name: Grid
   m_TagString: Untagged
@@ -262,6 +263,89 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &1460883430
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1460883427}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -4.407231, y: 1.2139672}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 4.8530283, y: 3.427935}
+  m_EdgeRadius: 0
+--- !u!1001 &1620804898
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1808693791810854977, guid: 8e3f1c66e20607449b77e233f46dc11d, type: 3}
+      propertyPath: m_Name
+      value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 1808693791810854986, guid: 8e3f1c66e20607449b77e233f46dc11d, type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1808693791810854986, guid: 8e3f1c66e20607449b77e233f46dc11d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -5.71
+      objectReference: {fileID: 0}
+    - target: {fileID: 1808693791810854986, guid: 8e3f1c66e20607449b77e233f46dc11d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 5.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1808693791810854986, guid: 8e3f1c66e20607449b77e233f46dc11d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1808693791810854986, guid: 8e3f1c66e20607449b77e233f46dc11d, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1808693791810854986, guid: 8e3f1c66e20607449b77e233f46dc11d, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1808693791810854986, guid: 8e3f1c66e20607449b77e233f46dc11d, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1808693791810854986, guid: 8e3f1c66e20607449b77e233f46dc11d, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1808693791810854986, guid: 8e3f1c66e20607449b77e233f46dc11d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1808693791810854986, guid: 8e3f1c66e20607449b77e233f46dc11d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1808693791810854986, guid: 8e3f1c66e20607449b77e233f46dc11d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 8e3f1c66e20607449b77e233f46dc11d, type: 3}
 --- !u!1 &1777907634
 GameObject:
   m_ObjectHideFlags: 0
@@ -273,7 +357,6 @@ GameObject:
   - component: {fileID: 1777907635}
   - component: {fileID: 1777907637}
   - component: {fileID: 1777907636}
-  - component: {fileID: 1777907638}
   m_Layer: 0
   m_Name: Tilemap
   m_TagString: Untagged
@@ -4079,27 +4162,6 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
---- !u!50 &1777907638
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1777907634}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 0
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
 --- !u!1 &1891235847
 GameObject:
   m_ObjectHideFlags: 0
