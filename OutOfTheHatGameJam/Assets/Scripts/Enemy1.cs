@@ -10,13 +10,13 @@ public class Enemy1 : MonoBehaviour
     public float mRaycastingDistance = 1f;
 
     //Outlets
-    private SpriteRenderer _mSpriteRenderer;
+    //private SpriteRenderer _mSpriteRenderer;
 
     // Start is called before the first frame update
     void Start()
     {
-        _mSpriteRenderer = gameObject.GetComponent<SpriteRenderer>();
-        _mSpriteRenderer.flipX = bIsGoingRight;
+        //_mSpriteRenderer = gameObject.GetComponent<SpriteRenderer>();
+        //_mSpriteRenderer.flipX = bIsGoingRight;
     }
 
 
@@ -47,7 +47,8 @@ public class Enemy1 : MonoBehaviour
             if (hit.transform.tag == "Terrain")
             {
                 bIsGoingRight = !bIsGoingRight;
-                _mSpriteRenderer.flipX = bIsGoingRight;
+                transform.Rotate(0,180,0);
+                //_mSpriteRenderer.flipX = bIsGoingRight;
 
             }
         }
