@@ -138,6 +138,18 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1808693791810854982, guid: 8e3f1c66e20607449b77e233f46dc11d, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1808693791810854982, guid: 8e3f1c66e20607449b77e233f46dc11d, type: 3}
+      propertyPath: groundLayer.m_Bits
+      value: 128
+      objectReference: {fileID: 0}
+    - target: {fileID: 1808693791810854982, guid: 8e3f1c66e20607449b77e233f46dc11d, type: 3}
+      propertyPath: groundCheckCollider
+      value: 
+      objectReference: {fileID: 1643918646}
     - target: {fileID: 1808693791810854986, guid: 8e3f1c66e20607449b77e233f46dc11d, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -225,8 +237,8 @@ Camera:
   m_GameObject: {fileID: 728552990}
   m_Enabled: 1
   serializedVersion: 2
-  m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_ClearFlags: 2
+  m_BackGroundColor: {r: 0.4300463, g: 0.6888789, b: 0.754717, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -267,7 +279,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 728552990}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: -10}
+  m_LocalPosition: {x: -25, y: 3.6, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
