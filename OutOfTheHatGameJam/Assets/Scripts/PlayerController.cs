@@ -8,6 +8,7 @@ public class PlayerController : MonoBehaviour
     //Outlets
     [Header("Outlets")]
     private Rigidbody2D rb;
+
     [SerializeField] Transform groundCheckCollider;
     [SerializeField] LayerMask groundLayer;
     
@@ -22,11 +23,15 @@ public class PlayerController : MonoBehaviour
     private void Start()
     { 
         rb = GetComponent<Rigidbody2D>();
+        //sprite = GetComponent<SpriteRenderer>();
+        //anim = GetComponent<Animator>();
     }
 
     private void FixedUpdate()
     {
         GroundCheck();
+
+        //anim.SetFloat("speed", rb.velocity.magnitude);
     }
     
     private void Update() 
@@ -34,6 +39,7 @@ public class PlayerController : MonoBehaviour
         //Movement
         float moveInput = Input.GetAxis("Horizontal"); 
         rb.velocity = new Vector2(moveInput * moveSpeed, rb.velocity.y);
+        //sprite.flipX = true;
         
         //Jump
         if (Input.GetButtonDown("Jump")) // Check if the jump button is pressed
