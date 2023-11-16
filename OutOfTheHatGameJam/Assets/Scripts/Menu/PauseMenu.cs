@@ -14,4 +14,23 @@ public class PauseMenu : MonoBehaviour
         instance = this;
     }
 
+    void SwitchMenu (GameObject someMenu)
+    {
+        //clean up
+        mainMenu.SetActive(false);
+        pauseMenu.SetActive(false);
+
+        //turn on
+        someMenu.SetActive(true);
+    }
+
+    void ShowMainMenu()
+    {
+        SwitchMenu(mainMenu);
+    }
+
+    void ShowPauseMenu()
+    {
+        SwitchMenu(pauseMenu);
+    }
 }
