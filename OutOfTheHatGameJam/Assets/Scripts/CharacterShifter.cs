@@ -4,36 +4,40 @@ using UnityEngine;
 
 public class CharacterShifter : MonoBehaviour
 {
-    public GameObject object1; // The first game object
-    public GameObject object2; // The second game object
+    public GameObject playerStand; // The first game object
+    public GameObject playerBall; // The second game object
     public Rigidbody2D rb; // The Rigidbody2D to be modified
-    private bool changed = false; // A state change
+    private bool isBall = false; // A state change
     public float zRotation = 90f;
+    public float ballPopHeight;
+
+    public PlayerController playerController;
     void Update()
     {
         // Check if the L-shift key is pressed
         if (Input.GetKeyDown(KeyCode.LeftShift))
         {
             // Toggle the game objects
-            object1.SetActive(!object1.activeSelf);
-            object2.SetActive(!object2.activeSelf);
+            playerStand.SetActive(!playerStand.activeSelf);
+            playerBall.SetActive(!playerBall.activeSelf);
             
-            changed = !changed;
+            isBall = !isBall;
             // Toggle the freeze rotation of the Rigidbody2D
-            if (changed)
+            if (isBall)
             {
                 rb.constraints &= ~RigidbodyConstraints2D.FreezeRotation;
             }
             else
             {
-               
                 rb.constraints |= RigidbodyConstraints2D.FreezeRotation; 
                 //rb.transform.Rotate(0, 0, zRotation);
                 rb.transform.eulerAngles = new Vector3(rb.transform.eulerAngles.x, rb.transform.eulerAngles.y, zRotation);
-            }
 
-            // Trigger the state change
-            
+                if (playerController.isGrounded)
+                {
+                    rb.AddForce(new Vector2(0f, ballPopHeight), ForceMode2D.Impulse);
+                }
+            }
         }
     }
 }
