@@ -3257,18 +3257,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 3092316321962018634, guid: ce0d0b383c836434a8421e4152b21be4, type: 3}
-      propertyPath: m_Size.y
-      value: 90.66243
-      objectReference: {fileID: 0}
-    - target: {fileID: 3092316321962018634, guid: ce0d0b383c836434a8421e4152b21be4, type: 3}
-      propertyPath: m_Offset.x
-      value: -23.609716
-      objectReference: {fileID: 0}
-    - target: {fileID: 3092316321962018634, guid: ce0d0b383c836434a8421e4152b21be4, type: 3}
-      propertyPath: m_Offset.y
-      value: -20.674866
-      objectReference: {fileID: 0}
     - target: {fileID: 3092316321962018636, guid: ce0d0b383c836434a8421e4152b21be4, type: 3}
       propertyPath: m_Name
       value: Walker fullBody
