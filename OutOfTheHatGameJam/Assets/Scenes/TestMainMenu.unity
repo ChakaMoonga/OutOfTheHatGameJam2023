@@ -140,7 +140,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &134360143
 RectTransform:
   m_ObjectHideFlags: 0
@@ -721,7 +721,7 @@ Animator:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1758439392}
-  m_Enabled: 0
+  m_Enabled: 1
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: 725a18bccf73c8a408dcf305e63f6614, type: 2}
   m_CullingMode: 0
@@ -833,11 +833,12 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1758439392}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e8fef2d7b5a33cf49814f54dcbcc12f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _cpAnim: {fileID: 0}
 --- !u!111 &1758439398
 Animation:
   m_ObjectHideFlags: 0
@@ -934,7 +935,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1876190165
 RectTransform:
   m_ObjectHideFlags: 0
