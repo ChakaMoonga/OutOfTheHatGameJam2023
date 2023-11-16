@@ -3,13 +3,7 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags:
-  - Terrain
-<<<<<<< HEAD
-  - BouncyMushroom
-=======
-  - Enemy
->>>>>>> d92b0d61cb4b198ac9368bcb7cb75b2eb1fc0e85
+  tags: []
   layers:
   - Default
   - TransparentFX
@@ -17,8 +11,8 @@ TagManager:
   - 
   - Water
   - UI
-  - Player
-  - Ground
+  - 
+  - 
   - 
   - 
   - 
