@@ -16,6 +16,7 @@ public class PlayerController : MonoBehaviour
     public float moveSpeed = 5f;
     public float jumpForce = 10f;
     public float bounceForce = 15f;
+    public float groundCheckRadius;
     public bool isGrounded = false;
 
     private void Start()
@@ -51,7 +52,9 @@ public class PlayerController : MonoBehaviour
         isGrounded = false;
             
         //Check if the GroundCheck collider is colliding with a Ground layer object; if true, you're grounded
-        Collider2D[] colliders = Physics2D.OverlapCircleAll(groundCheckCollider.position, 0.2f, groundLayer);
+        Collider2D[] colliders = Physics2D.OverlapCircleAll(groundCheckCollider.position, groundCheckRadius, groundLayer);
+        
+        
         if (colliders.Length > 0)
         {
             isGrounded = true;
@@ -87,6 +90,15 @@ public class PlayerController : MonoBehaviour
             }
         } 
     }
+    
+    
+    void OnDrawGizmos()
+    {
+        // Draw a circle at the position of the groundCheckCollider with a radius of 0.5f
+        Gizmos.color = isGrounded ? Color.green : Color.red;
+        Gizmos.DrawWireSphere(groundCheckCollider.position, groundCheckRadius);
+    }
+
 }
    
 
