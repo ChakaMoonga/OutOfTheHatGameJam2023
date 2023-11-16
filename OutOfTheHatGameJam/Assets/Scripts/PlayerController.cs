@@ -91,14 +91,14 @@ public class PlayerController : MonoBehaviour
         } 
     }
     
-    
+    /* Draws the ground detector circle
     void OnDrawGizmos()
     {
         // Draw a circle at the position of the groundCheckCollider with a radius of 0.5f
         Gizmos.color = isGrounded ? Color.green : Color.red;
         Gizmos.DrawWireSphere(groundCheckCollider.position, groundCheckRadius);
     }
-
+   */
 }
    
 
