@@ -47,4 +47,10 @@ public class Enemy1 : MonoBehaviour
             }
         }
     }
+    private void OnCollisionEnter2D(Collision2D other)
+    {
+        if (other.gameObject.GetComponent<PlayerController>()) {
+             
+        }
+    }
 }
