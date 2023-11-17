@@ -6,7 +6,8 @@ public class Health : MonoBehaviour
 {
    public int health = 100; // Health of the object
    public int maxHealth = 100;
-   public GameObject objectToDestroy; 
+   public GameObject objectToDestroy;
+   public bool ifEnemy = false;
    public void TakeDamage(int damage)
    {
        health -= damage;
@@ -14,7 +15,13 @@ public class Health : MonoBehaviour
        {
            print("Health is " + health);
            health = 0;
-           //Die();
+
+           if (ifEnemy = true)
+           {
+              Die(); 
+           }
+
+           
        }
    }
    
@@ -34,6 +41,6 @@ public class Health : MonoBehaviour
    
    void Die()
    {
-       // Implement logic for when the player dies
+       Destroy(objectToDestroy);
    }
 }
