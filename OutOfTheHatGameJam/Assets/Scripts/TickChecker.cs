@@ -1,13 +1,10 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
 
-public class Enemy2 : MonoBehaviour
+public class TickChecker : MonoBehaviour
 {
-    public float maxRayCastDist;
-    
     // Start is called before the first frame update
     void Start()
     {
@@ -17,11 +14,14 @@ public class Enemy2 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-  
+        
     }
 
     private void OnTriggerEnter2D(Collider2D col)
     {
-        
+        if(col.CompareTag("Player"))
+        {
+            print("HIT");
+        }
     }
 }
