@@ -5,15 +5,42 @@ using UnityEngine;
 public class Health : MonoBehaviour
 {
    public int health = 100; // Health of the object
-   public GameObject objectToDestroy; 
+   public int maxHealth = 100;
+   public GameObject objectToDestroy;
+   public bool ifEnemy = false;
    public void TakeDamage(int damage)
    {
        health -= damage;
        if (health <= 0)
        {
            print("Health is " + health);
-           // Destroy the object or do something else when health is 0
-           Destroy(objectToDestroy);
+           health = 0;
+
+           if (ifEnemy = true)
+           {
+              Die(); 
+           }
+
+           
        }
+   }
+   
+   
+   public void GainHealth(int heals)
+   {
+       health += heals;
+       if (health >= maxHealth)
+       {
+           health = maxHealth;
+           print("Health is " + health);
+           // Destroy the object or do something else when health is 0
+           
+       }
+   }
+   
+   
+   void Die()
+   {
+       Destroy(objectToDestroy);
    }
 }
