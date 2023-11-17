@@ -437,7 +437,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.392}
+  m_Color: {r: 0, g: 0, b: 0, a: 0.59607846}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -692,6 +692,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 576667367000707083, guid: a14b4b8cd2897904bb5b839d2ed6bf25, type: 3}
+      propertyPath: jump
+      value: 32
+      objectReference: {fileID: 0}
+    - target: {fileID: 576667367000707083, guid: a14b4b8cd2897904bb5b839d2ed6bf25, type: 3}
+      propertyPath: pauseGame
+      value: 27
+      objectReference: {fileID: 0}
+    - target: {fileID: 576667367000707083, guid: a14b4b8cd2897904bb5b839d2ed6bf25, type: 3}
+      propertyPath: playerJump
+      value: 32
+      objectReference: {fileID: 0}
+    - target: {fileID: 576667367000707083, guid: a14b4b8cd2897904bb5b839d2ed6bf25, type: 3}
+      propertyPath: groundCheckCollider
+      value: 
+      objectReference: {fileID: 2024341765}
     - target: {fileID: 576667367000707084, guid: a14b4b8cd2897904bb5b839d2ed6bf25, type: 3}
       propertyPath: m_Name
       value: Player Variant-WorkingFixAnim
@@ -1485,7 +1501,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2023810495}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1288933840}
+        m_TargetAssemblyTypeName: PauseMenu, Assembly-CSharp
+        m_MethodName: ShowMainMenu
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2023810495
 MonoBehaviour:
   m_ObjectHideFlags: 0

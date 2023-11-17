@@ -21,6 +21,7 @@ public class PlayerController : MonoBehaviour
     public bool isGrounded = false;
 
     public KeyCode pauseGame;
+    //public KeyCode playerJump;
 
     private void Start()
     { 
@@ -55,6 +56,7 @@ public class PlayerController : MonoBehaviour
         
             //Jump
             if (Input.GetButtonDown("Jump")) // Check if the jump button is pressed
+            //if (Input.GetKey(playerJump))
             {
                 if (isGrounded) //Check if the player is grounded
                 {
