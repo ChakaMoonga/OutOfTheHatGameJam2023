@@ -20,6 +20,8 @@ public class PlayerController : MonoBehaviour
     public float groundCheckRadius;
     public bool isGrounded = false;
 
+    public KeyCode pauseGame;
+
     private void Start()
     { 
         rb = GetComponent<Rigidbody2D>();
@@ -32,23 +34,34 @@ public class PlayerController : MonoBehaviour
         GroundCheck();
 
         //anim.SetFloat("speed", rb.velocity.magnitude);
+
+        if (Input.GetKey(pauseGame))
+        {
+            PauseMenu.instance.Show();
+        }
     }
     
     private void Update() 
-    { 
-        //Movement
-        float moveInput = Input.GetAxis("Horizontal"); 
-        rb.velocity = new Vector2(moveInput * moveSpeed, rb.velocity.y);
-        //sprite.flipX = true;
-        
-        //Jump
-        if (Input.GetButtonDown("Jump")) // Check if the jump button is pressed
+    {
+        if (PauseMenu.gameIsPaused == true)
         {
-            if (isGrounded) //Check if the player is grounded
+            return;
+        } else
+        {
+            //Movement
+            float moveInput = Input.GetAxis("Horizontal"); 
+            rb.velocity = new Vector2(moveInput * moveSpeed, rb.velocity.y);
+            //sprite.flipX = true;
+        
+            //Jump
+            if (Input.GetButtonDown("Jump")) // Check if the jump button is pressed
             {
-                rb.AddForce(new Vector2(0f, jumpForce), ForceMode2D.Impulse); // Apply the jump force
+                if (isGrounded) //Check if the player is grounded
+                {
+                    rb.AddForce(new Vector2(0f, jumpForce), ForceMode2D.Impulse); // Apply the jump force
+                }
             }
-        }
+        }  
     }
     
     //Ground Check

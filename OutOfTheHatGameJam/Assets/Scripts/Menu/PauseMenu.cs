@@ -1,10 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PauseMenu : MonoBehaviour
 {
     public static PauseMenu instance;
+    public static bool gameIsPaused;
 
     public GameObject mainMenu;
     public GameObject pauseMenu;
@@ -12,9 +14,29 @@ public class PauseMenu : MonoBehaviour
     void Awake()
     {
         instance = this;
+        Hide();
+        gameIsPaused = false;
     }
 
-    void SwitchMenu (GameObject someMenu)
+    public void Show()
+    {
+        ShowPauseMenu();
+        gameObject.SetActive(true);
+        gameIsPaused = true;
+    }
+
+    public void Hide()
+    {
+        gameObject.SetActive(false);
+    }
+
+    public void ResumeGame()
+    {
+        Hide();
+        gameIsPaused = false;
+    }
+
+    public void SwitchMenu (GameObject someMenu)
     {
         //clean up
         mainMenu.SetActive(false);
@@ -24,13 +46,21 @@ public class PauseMenu : MonoBehaviour
         someMenu.SetActive(true);
     }
 
-    void ShowMainMenu()
+    public void ShowMainMenu()
     {
         SwitchMenu(mainMenu);
     }
 
-    void ShowPauseMenu()
+    public void ShowPauseMenu()
     {
         SwitchMenu(pauseMenu);
+    }
+
+    public void RestartGame()
+    {
+        //reload scene
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        Hide();
+        gameIsPaused = false;
     }
 }
