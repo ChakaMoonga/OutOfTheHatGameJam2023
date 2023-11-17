@@ -123,6 +123,11 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!4 &76675742 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1808693791047978431, guid: 8e3f1c66e20607449b77e233f46dc11d, type: 3}
+  m_PrefabInstance: {fileID: 428445692}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &324745358 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1587226774340065649, guid: 8e3f1c66e20607449b77e233f46dc11d, type: 3}
@@ -198,9 +203,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 324745366}
-  sprite1: {fileID: 1334400953}
-  sprite2: {fileID: 2092305091}
-  sprite3: {fileID: 1181144567}
+  squash: {fileID: 76675742}
 --- !u!50 &324745366
 Rigidbody2D:
   serializedVersion: 4
@@ -232,6 +235,14 @@ PrefabInstance:
     - target: {fileID: 1587226772469962766, guid: 8e3f1c66e20607449b77e233f46dc11d, type: 3}
       propertyPath: m_FlipX
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1587226774340065648, guid: 8e3f1c66e20607449b77e233f46dc11d, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1808693791047978424, guid: 8e3f1c66e20607449b77e233f46dc11d, type: 3}
+      propertyPath: m_FlipX
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1808693791810854976, guid: 8e3f1c66e20607449b77e233f46dc11d, type: 3}
       propertyPath: playerBall
@@ -492,16 +503,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c29dfb8480302f945945ea340e584a6e, type: 3}
---- !u!212 &1181144567 stripped
-SpriteRenderer:
-  m_CorrespondingSourceObject: {fileID: 1587226773729681801, guid: 8e3f1c66e20607449b77e233f46dc11d, type: 3}
-  m_PrefabInstance: {fileID: 428445692}
-  m_PrefabAsset: {fileID: 0}
---- !u!212 &1334400953 stripped
-SpriteRenderer:
-  m_CorrespondingSourceObject: {fileID: 1587226772469962766, guid: 8e3f1c66e20607449b77e233f46dc11d, type: 3}
-  m_PrefabInstance: {fileID: 428445692}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1499432779 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1808693791543852376, guid: 8e3f1c66e20607449b77e233f46dc11d, type: 3}
@@ -17099,11 +17100,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 007fdaa2cf09279429599e31c367ad21, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!212 &2092305091 stripped
-SpriteRenderer:
-  m_CorrespondingSourceObject: {fileID: 1587226774357665836, guid: 8e3f1c66e20607449b77e233f46dc11d, type: 3}
-  m_PrefabInstance: {fileID: 428445692}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &468787383253923742
 PrefabInstance:
   m_ObjectHideFlags: 0
