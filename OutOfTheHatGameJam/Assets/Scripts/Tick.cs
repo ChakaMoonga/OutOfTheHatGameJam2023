@@ -4,10 +4,9 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 
-public class Enemy2 : MonoBehaviour
+public class Tick : MonoBehaviour
 {
-    public float maxRayCastDist;
-    
+
     // Start is called before the first frame update
     void Start()
     {
