@@ -34,7 +34,7 @@ public class MainMenu : MonoBehaviour
         Hide();
     }
 
-    void Hide()
+    public void Hide()
     {
         gameObject.SetActive(false);
     }
