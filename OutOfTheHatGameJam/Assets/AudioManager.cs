@@ -6,7 +6,7 @@ public class AudioManager : MonoBehaviour
 {
     public AudioSource audioSource;
 
-    void Start()
+    void Awake()
     {
         audioSource.Play();
     }
