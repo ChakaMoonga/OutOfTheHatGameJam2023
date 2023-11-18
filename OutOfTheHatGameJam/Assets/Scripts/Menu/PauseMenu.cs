@@ -11,6 +11,13 @@ public class PauseMenu : MonoBehaviour
     public GameObject mainMenu;
     public GameObject pauseMenu;
 
+    // main menu ***
+    public GameObject mainMenuTitle;
+    public GameObject mainMenuPanel;
+    public GameObject mainPlay;
+    public GameObject mainControls;
+    public GameObject mainCredits;
+
     void Awake()
     {
         instance = this;

@@ -20,7 +20,7 @@ public class PlayerController : MonoBehaviour
     public float groundCheckRadius;
     public bool isGrounded = false;
 
-    public KeyCode pauseGame;
+    //public KeyCode pauseGame;
     //public KeyCode playerJump;
 
     private void Start()
@@ -36,7 +36,7 @@ public class PlayerController : MonoBehaviour
 
         //anim.SetFloat("speed", rb.velocity.magnitude);
 
-        if (Input.GetKey(pauseGame))
+        if (Input.GetKey(KeyCode.Escape))
         {
             PauseMenu.instance.Show();
         }
