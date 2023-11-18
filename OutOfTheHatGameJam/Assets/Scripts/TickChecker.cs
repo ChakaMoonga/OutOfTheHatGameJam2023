@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class TickChecker : MonoBehaviour
 {
+    public Tick tickScript;
     // Start is called before the first frame update
     void Start()
     {
@@ -21,7 +22,7 @@ public class TickChecker : MonoBehaviour
     {
         if(col.CompareTag("Player"))
         {
-            print("HIT");
+            tickScript.TickFall();
         }
     }
 }
