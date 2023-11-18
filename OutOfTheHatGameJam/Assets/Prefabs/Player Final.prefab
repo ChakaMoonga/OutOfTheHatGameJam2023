@@ -1322,6 +1322,7 @@ MonoBehaviour:
   bounceForce: 15
   groundCheckRadius: 1.2
   isGrounded: 0
+  pauseGame: 0
 --- !u!114 &3367830799496304999
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1338,7 +1339,7 @@ MonoBehaviour:
   playerBall: {fileID: 3367830799765406847}
   rb: {fileID: 3367830799496305004}
   zRotation: 0
-  ballPopHeight: 2
+  ballPopHeight: 4
   playerController: {fileID: 3367830799496304993}
 --- !u!1839735485 &4009669521300257081
 Tilemap:
@@ -1626,7 +1627,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 100
+  maxHealth: 100
   objectToDestroy: {fileID: 3367830799496304998}
+  ifEnemy: 0
 --- !u!1 &4009669521012658067
 GameObject:
   m_ObjectHideFlags: 0

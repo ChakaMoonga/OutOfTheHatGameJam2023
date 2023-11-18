@@ -130,22 +130,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1255112024, guid: ce0d0b383c836434a8421e4152b21be4, type: 3}
-      propertyPath: m_SortingOrder
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 3092316321962018634, guid: ce0d0b383c836434a8421e4152b21be4, type: 3}
-      propertyPath: m_Size.y
-      value: 74.78586
-      objectReference: {fileID: 0}
-    - target: {fileID: 3092316321962018634, guid: ce0d0b383c836434a8421e4152b21be4, type: 3}
-      propertyPath: m_Offset.x
-      value: -23.609715
-      objectReference: {fileID: 0}
-    - target: {fileID: 3092316321962018634, guid: ce0d0b383c836434a8421e4152b21be4, type: 3}
-      propertyPath: m_Offset.y
-      value: -12.73639
-      objectReference: {fileID: 0}
     - target: {fileID: 3092316321962018636, guid: ce0d0b383c836434a8421e4152b21be4, type: 3}
       propertyPath: m_Name
       value: Walker fullBody (1)
@@ -153,18 +137,6 @@ PrefabInstance:
     - target: {fileID: 3092316321962018637, guid: ce0d0b383c836434a8421e4152b21be4, type: 3}
       propertyPath: m_RootOrder
       value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 3092316321962018637, guid: ce0d0b383c836434a8421e4152b21be4, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.02
-      objectReference: {fileID: 0}
-    - target: {fileID: 3092316321962018637, guid: ce0d0b383c836434a8421e4152b21be4, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.02
-      objectReference: {fileID: 0}
-    - target: {fileID: 3092316321962018637, guid: ce0d0b383c836434a8421e4152b21be4, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.02
       objectReference: {fileID: 0}
     - target: {fileID: 3092316321962018637, guid: ce0d0b383c836434a8421e4152b21be4, type: 3}
       propertyPath: m_LocalPosition.x
@@ -215,22 +187,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1255112024, guid: ce0d0b383c836434a8421e4152b21be4, type: 3}
-      propertyPath: m_SortingOrder
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 3092316321962018634, guid: ce0d0b383c836434a8421e4152b21be4, type: 3}
-      propertyPath: m_Size.y
-      value: 74.78586
-      objectReference: {fileID: 0}
-    - target: {fileID: 3092316321962018634, guid: ce0d0b383c836434a8421e4152b21be4, type: 3}
-      propertyPath: m_Offset.x
-      value: -23.609715
-      objectReference: {fileID: 0}
-    - target: {fileID: 3092316321962018634, guid: ce0d0b383c836434a8421e4152b21be4, type: 3}
-      propertyPath: m_Offset.y
-      value: -12.73639
-      objectReference: {fileID: 0}
     - target: {fileID: 3092316321962018636, guid: ce0d0b383c836434a8421e4152b21be4, type: 3}
       propertyPath: m_Name
       value: Walker fullBody
@@ -238,18 +194,6 @@ PrefabInstance:
     - target: {fileID: 3092316321962018637, guid: ce0d0b383c836434a8421e4152b21be4, type: 3}
       propertyPath: m_RootOrder
       value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 3092316321962018637, guid: ce0d0b383c836434a8421e4152b21be4, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.02
-      objectReference: {fileID: 0}
-    - target: {fileID: 3092316321962018637, guid: ce0d0b383c836434a8421e4152b21be4, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.02
-      objectReference: {fileID: 0}
-    - target: {fileID: 3092316321962018637, guid: ce0d0b383c836434a8421e4152b21be4, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.02
       objectReference: {fileID: 0}
     - target: {fileID: 3092316321962018637, guid: ce0d0b383c836434a8421e4152b21be4, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1017,22 +961,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1255112024, guid: ce0d0b383c836434a8421e4152b21be4, type: 3}
-      propertyPath: m_SortingOrder
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 3092316321962018634, guid: ce0d0b383c836434a8421e4152b21be4, type: 3}
-      propertyPath: m_Size.y
-      value: 74.78586
-      objectReference: {fileID: 0}
-    - target: {fileID: 3092316321962018634, guid: ce0d0b383c836434a8421e4152b21be4, type: 3}
-      propertyPath: m_Offset.x
-      value: -23.609715
-      objectReference: {fileID: 0}
-    - target: {fileID: 3092316321962018634, guid: ce0d0b383c836434a8421e4152b21be4, type: 3}
-      propertyPath: m_Offset.y
-      value: -12.73639
-      objectReference: {fileID: 0}
     - target: {fileID: 3092316321962018636, guid: ce0d0b383c836434a8421e4152b21be4, type: 3}
       propertyPath: m_Name
       value: Walker fullBody (2)
@@ -1040,18 +968,6 @@ PrefabInstance:
     - target: {fileID: 3092316321962018637, guid: ce0d0b383c836434a8421e4152b21be4, type: 3}
       propertyPath: m_RootOrder
       value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 3092316321962018637, guid: ce0d0b383c836434a8421e4152b21be4, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.02
-      objectReference: {fileID: 0}
-    - target: {fileID: 3092316321962018637, guid: ce0d0b383c836434a8421e4152b21be4, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.02
-      objectReference: {fileID: 0}
-    - target: {fileID: 3092316321962018637, guid: ce0d0b383c836434a8421e4152b21be4, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.02
       objectReference: {fileID: 0}
     - target: {fileID: 3092316321962018637, guid: ce0d0b383c836434a8421e4152b21be4, type: 3}
       propertyPath: m_LocalPosition.x
@@ -53990,10 +53906,6 @@ PrefabInstance:
     - target: {fileID: 3367830799496304998, guid: 8d96da8786a38744895006718d52572f, type: 3}
       propertyPath: m_Name
       value: Player Final
-      objectReference: {fileID: 0}
-    - target: {fileID: 3367830799496304999, guid: 8d96da8786a38744895006718d52572f, type: 3}
-      propertyPath: ballPopHeight
-      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 3367830799496305005, guid: 8d96da8786a38744895006718d52572f, type: 3}
       propertyPath: m_RootOrder
