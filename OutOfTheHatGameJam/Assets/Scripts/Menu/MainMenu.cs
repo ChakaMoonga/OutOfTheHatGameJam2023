@@ -8,6 +8,7 @@ public class MainMenu : MonoBehaviour
 
     public GameObject mainMenuPanel;
     public GameObject mainTitle;
+    public GameObject mainBG;
     
     // main buttons
     public GameObject mainPlay;
@@ -30,8 +31,6 @@ public class MainMenu : MonoBehaviour
     {
         instance = this;
         //PauseMenu.gameIsPaused = true;
-        //OnStart();
-        Hide();
     }
 
     public void Hide()
@@ -51,6 +50,13 @@ public class MainMenu : MonoBehaviour
         mainPlay.SetActive(true);
         mainControls.SetActive(true);
         mainCredits.SetActive(true);
+
+        //clean up
+        controlsList.SetActive(false);
+        visualTeamList.SetActive(false);
+        codeTeamList.SetActive(false);
+        backButton.SetActive(false);
+        nextButton.SetActive(false);
     }
 
     public void ShowControlsMenu()
@@ -65,7 +71,6 @@ public class MainMenu : MonoBehaviour
         creditsHeader.SetActive(false);
         visualTeamList.SetActive(false);
         codeTeamList.SetActive(false);
-        backButton.SetActive(false);
         nextButton.SetActive(false);
     }
 
@@ -82,7 +87,6 @@ public class MainMenu : MonoBehaviour
         mainControls.SetActive(false);
         mainCredits.SetActive(false);
         codeTeamList.SetActive(false);
-        backButton.SetActive(false);
     }
 
     public void ShowCodeCreditsMenu()
@@ -92,6 +96,7 @@ public class MainMenu : MonoBehaviour
 
         //clean up
         visualTeamList.SetActive(false);
+        nextButton.SetActive(false);
     }
 
     public void SwitchMenu(GameObject someMenu)

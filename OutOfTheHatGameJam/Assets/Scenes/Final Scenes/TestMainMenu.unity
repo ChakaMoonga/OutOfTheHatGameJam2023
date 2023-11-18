@@ -2018,6 +2018,10 @@ MonoBehaviour:
   mainPlay: {fileID: 1186164099}
   mainControls: {fileID: 1452157104}
   mainCredits: {fileID: 1298250481}
+  mainControlsPanel: {fileID: 1009215818}
+  mainCreditsPanel: {fileID: 1605556243}
+  mainBackButton: {fileID: 1354993740}
+  mainNextButton: {fileID: 57964260}
 --- !u!114 &1288933841
 MonoBehaviour:
   m_ObjectHideFlags: 0

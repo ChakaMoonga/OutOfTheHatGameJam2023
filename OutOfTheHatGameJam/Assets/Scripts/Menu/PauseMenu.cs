@@ -17,12 +17,18 @@ public class PauseMenu : MonoBehaviour
     public GameObject mainPlay;
     public GameObject mainControls;
     public GameObject mainCredits;
+    public GameObject mainControlsPanel;
+    public GameObject mainCreditsPanel;
+    public GameObject mainBackButton;
+    public GameObject mainNextButton;
+    public GameObject mainBG;
 
     void Awake()
     {
         instance = this;
-        Hide();
-        gameIsPaused = false;
+        //Hide();
+        gameIsPaused = true;
+        ShowMainMenu();
     }
 
     public void Show()
@@ -56,6 +62,10 @@ public class PauseMenu : MonoBehaviour
     public void ShowMainMenu()
     {
         SwitchMenu(mainMenu);
+        mainControlsPanel.SetActive(false);
+        mainCreditsPanel.SetActive(false);
+        mainNextButton.SetActive(false);
+        mainBackButton.SetActive(false);
     }
 
     public void ShowPauseMenu()
@@ -69,5 +79,17 @@ public class PauseMenu : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         Hide();
         gameIsPaused = false;
-    }
+
+        //cleanup
+        mainMenuTitle.SetActive(false);
+        mainMenuPanel.SetActive(false);
+        mainPlay.SetActive(false);
+        mainControls.SetActive(false);
+        mainCredits.SetActive(false);
+        mainControlsPanel.SetActive(false);
+        mainCreditsPanel.SetActive(false);
+        mainBackButton.SetActive(false);
+        mainNextButton.SetActive(false);
+        mainBG.SetActive(false);
+}
 }
