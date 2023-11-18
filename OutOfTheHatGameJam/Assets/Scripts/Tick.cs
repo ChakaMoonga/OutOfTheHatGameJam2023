@@ -12,11 +12,14 @@ public class Tick : MonoBehaviour
     [SerializeField] LayerMask playerLayer;
     public Collider2D[] colliders;
     public bool inZone;
+    public GameObject explosion;
+    public bool didExplode;
     
     // Start is called before the first frame update
     void Start()
     {
         rb = gameObject.GetComponent<Rigidbody2D>();
+        didExplode = false;
     }
 
     // Update is called once per frame
@@ -38,7 +41,7 @@ public class Tick : MonoBehaviour
         colliders = Physics2D.OverlapCircleAll(transform.position, tickRadius, playerLayer);
         
         
-        if (colliders.Length > 0)
+        if (colliders.Length > 0 && !didExplode)
         {
             inZone = true;
             Detonate();
@@ -47,7 +50,10 @@ public class Tick : MonoBehaviour
 
     void Detonate()
     {
-        Destroy(this.gameObject);
+        Instantiate(explosion, transform.position, Quaternion.identity);
+        didExplode = true;
+        gameObject.SetActive(false);
+        //Destroy(this.gameObject);
     }
     
     void OnDrawGizmos()

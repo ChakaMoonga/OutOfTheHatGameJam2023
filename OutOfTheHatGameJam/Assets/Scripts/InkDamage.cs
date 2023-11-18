@@ -8,7 +8,7 @@ public class InkDamage : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        print("trigger entered");
+        //print("trigger entered");
         Health health = other.GetComponent<Health>();
         if (health != null)
         {
