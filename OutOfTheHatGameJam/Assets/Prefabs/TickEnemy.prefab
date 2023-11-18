@@ -920,6 +920,7 @@ GameObject:
   - component: {fileID: 1154927318209526835}
   - component: {fileID: 1051942087}
   - component: {fileID: 1051942088}
+  - component: {fileID: 1051942089}
   m_Layer: 0
   m_Name: TickEnemy
   m_TagString: Untagged
@@ -988,6 +989,8 @@ MonoBehaviour:
     m_Bits: 64
   colliders: []
   inZone: 0
+  explosion: {fileID: 100006, guid: e076683e0305e35498b8e8834978c0fa, type: 3}
+  didExplode: 0
 --- !u!212 &1154927318209526835
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1077,6 +1080,19 @@ CircleCollider2D:
   m_Offset: {x: 1.2243948, y: 0}
   serializedVersion: 2
   m_Radius: 1.7243948
+--- !u!114 &1051942089
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1154927318209526846}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28496db19bfa8e24f91745dc05149485, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 10
 --- !u!1 &1154927318418216432
 GameObject:
   m_ObjectHideFlags: 0
